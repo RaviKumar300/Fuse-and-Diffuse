@@ -1,0 +1,23 @@
+model:
+  name: "DualBranchGANRefiner"
+  input_channels: 1
+  output_channels: 1
+  latent_dim: 256
+  generator:
+    global_branch:
+      layers: [64, 128, 256, 512, 512]
+      attention_indices: [3, 4]
+    local_branch:
+      layers: [32, 64, 128, 128]
+  discriminator:
+    type: "PatchGAN"
+    layers: 3
+  optimizer:
+    lr_g: 0.0002
+    lr_d: 0.0002
+    beta1: 0.5
+    beta2: 0.999
+  losses:
+    adversarial_weight: 1.0
+    l1_weight: 10.0
+    perceptual_weight: 1.0

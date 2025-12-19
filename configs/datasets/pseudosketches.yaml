@@ -1,0 +1,10 @@
+dataset:
+  name: "Pseudosketches"
+  root_dir: "./data/Pseudosketches"
+  image_size: 512
+  use_pseudo_labels: true
+  loader:
+    batch_size: 16
+    num_workers: 8
+    shuffle: true
+  structure_fidelity_weight: 0.8

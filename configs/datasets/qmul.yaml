@@ -1,0 +1,17 @@
+dataset:
+  name: "QMUL-Sketch+"
+  root_dir: "./data/QMUL"
+  image_size: 256
+  channels: 3
+  split:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+  loader:
+    batch_size: 32
+    num_workers: 4
+    shuffle: true
+  transforms:
+    - "Resize(256)"
+    - "CenterCrop(256)"
+    - "ToTensor()"

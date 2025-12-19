@@ -1,0 +1,13 @@
+dataset:
+  name: "SketchyCOCO"
+  root_dir: "./data/SketchyCOCO"
+  image_size: 512
+  channels: 3
+  classes: 14  # Foreground classes
+  loader:
+    batch_size: 16
+    num_workers: 8
+    shuffle: true
+  augmentations:
+    - "RandomHorizontalFlip"
+    - "ColorJitter"
