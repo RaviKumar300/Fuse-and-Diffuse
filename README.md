@@ -116,15 +116,3 @@ Train the Adapters Cluster on top of the frozen SDXL backbone.
 python scripts/train_stage2_diffusion.py --dataset SketchyCOCO
 ```
 
-## Citation
-
-If you find this code or research helpful, please cite our paper:
-
-```bibtex
-@inproceedings{jain2025fuseanddiffuse,
-  title={Fuse-and-Diffuse: A Hybrid GAN-Diffusion Framework for Disentangled and Controllable Sketch-to-Image Synthesis},
-  author={Jain, Ankush and Kumar, Ravi and Siddhant},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025}
-}
-```
