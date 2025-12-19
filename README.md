@@ -60,15 +60,3 @@ Quantitative experiments on QMUL-Sketch+, SketchyCOCO, and Pseudosketches demons
 ## Usage and Implementation
 
 *Code release and folder structure explanation to be added.*
-
-## Citation
-
-If you find this code or research helpful, please cite our paper:
-
-```bibtex
-@inproceedings{jain2025fuseanddiffuse,
-  title={Fuse-and-Diffuse: A Hybrid GAN-Diffusion Framework for Disentangled and Controllable Sketch-to-Image Synthesis},
-  author={Jain, Ankush and Kumar, Ravi and Siddhant},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025}
-}
